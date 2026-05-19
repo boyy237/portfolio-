@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio  Full Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">landry_Tech</div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#apps">Outils</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Développeur Full Stack &amp; Passionné Tech</p>
+    <h1 class="hero-name">
+      MyK<br/>
+      <span class="line2">Emmanuel</span>
+      <span class="accent-word"> Landry</span>
+    </h1>
+    <p class="hero-desc">
+      <span id="typed-role"></span><br/><br/>
+      Je construis des expériences numériques modernes,<br/>
+      du front-end jusqu'à l'infrastructure backend.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">Voir mes projets</a>
+      <a href="#contact" class="btn-ghost">Me contacter</a>
+    </div>
+  </div>
+
+  <!-- Avatar -->
+  <div class="hero-avatar">
+    <div class="avatar-wrapper">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring2"></div>
+      <div class="avatar-img" id="avatarImg">
+        <div class="avatar-placeholder">
+          <div class="avatar-placeholder-icon">📷</div>
+          <span>Cliquez pour<br/>ajouter photo</span>
+        </div>
+      </div>
+    </div>
+    <input type="file" id="photoInput" accept="image/*" style="display:none"/>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label"> I — À propos de moi</div>
+  <h2 class="section-title reveal">Qui suis-je<span style="color:var(--accent)">.</span></h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>Je suis un <strong>développeur Full Stack</strong> passionné par la création d'applications web et mobiles robustes. Mon parcours m'a emmené de la conception d'interfaces utilisateur soignées jusqu'à l'architecture de systèmes backend scalables.</p>
+      <p>Formé en <strong>informatique</strong>, je maîtrise aussi bien le développement web moderne (React, Laravel) que le développement backend avec <strong>Spring Boot</strong> et Python. Je m'intéresse également à la <strong>cybersécurité</strong> avec Kali Linux.</p>
+      <p>Mon objectif : transformer des idées complexes en solutions digitales élégantes et performantes, avec un souci constant de la qualité du code et de l'expérience utilisateur.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card reveal">
+        <div class="stat-number" data-target="10">0</div>
+        <div class="stat-label">Projets réalisés</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number" data-target="9">0</div>
+        <div class="stat-label">Technologies</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Années d'exp.</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-label">% Motivation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label reveal">II — Compétences</div>
+  <h2 class="section-title reveal">Stack technique<span style="color:var(--accent)">.</span></h2>
+
+  <div class="skills-category-title reveal">Langages &amp; Frameworks</div>
+  <div class="skills-grid reveal">
+
+    <!-- HTML5 -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 3l2.4 26.4L16 32l9.6-2.6L28 3H4z" fill="#E44D26"/><path d="M16 29.6V5.2H25.6L23.6 27.2 16 29.6z" fill="#F16529"/><path d="M10.4 13.6h5.6v-2.8H7.6L8.4 19.2H16v-2.8h-5.2L10.4 13.6zM10.8 20.8H8L8.4 24l7.6 2.4v-3L10.8 22.8l-.0-2z" fill="#EBEBEB"/><path d="M16 13.6v2.8h5.2l-.4 4-4.8 1.2v3l7.6-2.4.8-9.2H16z" fill="white"/></svg>
+      </div>
+      <div class="skill-name">HTML5</div>
+    </div>
+
+    <!-- CSS3 -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 3l2.4 26.4L16 32l9.6-2.6L28 3H4z" fill="#1572B6"/><path d="M16 29.6V5.2H25.6L23.6 27.2 16 29.6z" fill="#33A9DC"/><path d="M10.4 13.6h5.6v-2.8H7.6L8.4 19.2H16v-2.8h-5.2L10.4 13.6zM10.8 20.8H8l.4 3.2 7.6 2.4v-3L10.8 22.8l-.0-2z" fill="#EBEBEB"/><path d="M16 13.6v2.8h5.2l-.4 4-4.8 1.2v3l7.6-2.4.8-9.2H16z" fill="white"/></svg>
+      </div>
+      <div class="skill-name">CSS3</div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" fill="#F7DF1E"/><path d="M19.2 24.8c.5.9 1.2 1.6 2.4 1.6 1 0 1.7-.5 1.7-1.2 0-.8-.7-1.1-1.8-1.6l-.6-.3c-1.8-.8-3-1.7-3-3.7 0-1.8 1.4-3.2 3.6-3.2 1.6 0 2.7.6 3.5 2l-1.9 1.2c-.4-.8-.9-1.1-1.6-1.1-.7 0-1.2.5-1.2 1.1 0 .8.5 1.1 1.6 1.6l.6.3c2.1.9 3.3 1.8 3.3 3.9 0 2.2-1.7 3.4-4 3.4-2.2 0-3.7-1.1-4.4-2.5l2.1-1.2zM10.8 24.9c.4.7.7 1.2 1.5 1.2.7 0 1.2-.3 1.2-1.5V17h2.4v7.7c0 2.5-1.5 3.6-3.6 3.6-1.9 0-3-1-3.6-2.2l2.1-1.2z" fill="black"/></svg>
+      </div>
+      <div class="skill-name">JavaScript</div>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.8 2 9.2 5.1 9.2 5.1V8.2H16.1V9H6.2S2 8.5 2 16c0 7.5 4.7 7.2 4.7 7.2H8.9v-3.5S8.8 15 12 15h7.8s3.2.05 3.2-3.1V5.4S23.5 2 16 2zm-3.1 1.8c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" fill="url(#pyb)"/><path d="M16 30c7.2 0 6.8-3.1 6.8-3.1V23.8H15.9V23H25.8S30 23.5 30 16c0-7.5-4.7-7.2-4.7-7.2H23.1v3.5s.1 4.7-3.1 4.7H12.2S9 16.95 9 20.1v6.5S8.5 30 16 30zm3.1-1.8c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z" fill="url(#pyy)"/><defs><linearGradient id="pyb" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#387EB8"/><stop offset="100%" stop-color="#366994"/></linearGradient><linearGradient id="pyy" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFE052"/><stop offset="100%" stop-color="#FFC331"/></linearGradient></defs></svg>
+      </div>
+      <div class="skill-name">Python</div>
+    </div>
+
+    <!-- Java -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M11.8 23.6s-.9.5.7.7c1.9.2 2.9.2 5-.2 0 0 .6.4 1.4.7-4.9 2.1-11.1-.1-7.1-1.2zM11.1 20.7s-1 .7.5.9c1.9.2 3.4.2 6-.3 0 0 .4.4 1 .6-5.3 1.5-11.2.1-7.5-1.2z" fill="#0074BD"/><path d="M17.4 15.4c1.1 1.2-.3 2.3-.3 2.3s2.7-1.4 1.5-3.1c-1.2-1.7-2.1-2.5 2.8-5.4 0 0-7.7 1.9-4 6.2z" fill="#EA2D2E"/><path d="M24.5 25.1s.7.6-.7.9c-2.7.8-11.1 1-13.4 0-.8-.4.7-.9.7-.9s-1.8-.4-2.5.9c-.8 1.2 15.1 1.3 17.1-.1-.5-.6-1.2-.8-1.2-.8zM12.4 17.6s-4.1 1-1.4 1.4c1.2.2 3.5.1 5.6-.1 1.8-.1 3.5-.4 3.5-.4s-.6.3-1 .5c-4.2 1.1-12.3.6-10-.5 1.9-1 3.3-.9 3.3-.9zM22.2 22.2c4.3-2.2 2.3-4.4 0.9-4.1-.3.1-.5.2-.5.2s.1-.2.4-.3c2.9-1 5.1 3-.9 4.5 0 0 .1-.1.1-.3z" fill="#0074BD"/><path d="M19 2s2.3 2.3-2.2 5.9c-3.6 2.8-.8 4.5 0 6.3-2.1-1.9-3.6-3.5-2.6-5 1.5-2.3 5.7-3.4 4.8-7.2z" fill="#EA2D2E"/><path d="M13.2 30.8c4.1.3 10.4-.2 10.6-2 0 0-.3.7-3.4 1.3-3.5.6-7.9.5-10.5.1 0 0 .5.5 3.3.6z" fill="#0074BD"/></svg>
+      </div>
+      <div class="skill-name">Java</div>
+    </div>
+
+    <!-- React -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="2.5" fill="#61DAFB"/><path d="M16 9.5c4.4 0 8.5.8 11.5 2.1C30.8 13.1 32 14.6 32 16s-1.2 2.9-4.5 4.4C24.5 21.7 20.4 22.5 16 22.5S7.5 21.7 4.5 20.4C1.2 18.9 0 17.4 0 16s1.2-2.9 4.5-4.4C7.5 10.3 11.6 9.5 16 9.5z" stroke="#61DAFB" stroke-width="1.5" fill="none"/><path d="M11.2 12.75C13.4 8.9 15.9 6.3 18 5.1c2.4-1.4 4.2-1.2 5.2.4 1 1.6.6 4.1-1 7.2-1.6 2.9-4.3 5.8-6.8 7.6-2.7 1.9-5.1 2.7-6.5 1.7-1.4-1.1-1.4-3.5.3-9.22z" stroke="#61DAFB" stroke-width="1.5" fill="none"/><path d="M11.2 19.25c-2.2-3.85-3.2-7.5-2.8-10.15.4-2.9 1.9-4.2 3.6-4.2 1.7 0 3.9 1.3 6 4.1 1.9 2.5 3.5 6.2 4 9.3.5 3.3-.1 5.8-1.9 6.5-1.8.7-4.4-.4-8.9-5.55z" stroke="#61DAFB" stroke-width="1.5" fill="none"/></svg>
+      </div>
+      <div class="skill-name">React</div>
+    </div>
+
+    <!-- Laravel -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M31.8 10.6c0-.1-.1-.2-.2-.3L27 5.9c-.2-.2-.5-.1-.6.1l-5.1 8.8-3.4-3.4c-.2-.2-.5-.2-.7 0l-4.5 4.6L9.4 6.8c-.1-.2-.4-.3-.6-.1L.2 13.3c-.1.1-.2.2-.2.4l.2 9.7c0 .2.1.3.3.4l9.9 5.8c.2.1.4.1.5 0L21 23.7l9.3 5.5c.2.1.4.1.5 0l.8-.5c.1-.1.2-.2.2-.4l-.0-17.7zM9.3 27.5L1.5 23V14.1L9 8.8l3.5 9.6-3.2 9.1zm.7.1l2.9-8.3 7.1 4.2-10 4.1zm10.4-4.8L13 18.5l4.2-4.3 3.7 3.8-.5.8zm.7-1.8l.5-.8 8.7-2.4-3.3 5.7-5.9-2.5zM29.5 22l-8.3 2.3 3.1-5.5 5.2-1.4V22zm0-6.1l-5 1.3 4.4-7.6 3 2.9-2.4 3.4z" fill="#FB503B"/></svg>
+      </div>
+      <div class="skill-name">Laravel</div>
+    </div>
+
+    <!-- Spring Boot -->
+    <div class="skill-card scanline">
+      <div class="skill-logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.8 4.4C27.6 1.7 24.2.1 20.5 0 15.3-.1 10.9 3 8.6 7.5c-1-1.7-2.5-3-4.3-3.8L2 2.5C4 5 4.6 8.3 3.5 11.4 1.5 13.7.3 16.7.3 20c0 6.6 5.1 12 11.6 12 2.7 0 5.2-.9 7.1-2.5 1.9 1.6 4.4 2.5 7.1 2.5 6 0 10.9-4.9 10.9-11 0-6.8-3.4-13-7.2-16.6zM12 28c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm14-2c-1.3 0-2.4-.4-3.4-1.2.8-1.5 1.4-3.2 1.4-5 0-2.4-.8-4.6-2.2-6.4.9-3.6 4.2-6.4 8.2-6.4 4.4 0 8 3.6 8 8S30.4 26 26 26z" fill="#6DB33F"/><circle cx="12" cy="20" r="3" fill="white"/></svg>
+      </div>
+      <div class="skill-name">Spring Boot</div>
+    </div>
+
+    <!-- Kali Linux -->
+    <div class="skill-card scanline">
+      <div class="skill-logo" style="font-size:32px;">🐉</div>
+      <div class="skill-name">Kali Linux</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">III — Mes projets</div>
+  <h2 class="section-title reveal">Ce que j'ai construit<span style="color:var(--accent)">.</span></h2>
+  <div class="projects-grid">
+
+    <div class="project-card scanline reveal">
+      <div class="project-num">01 / PROJET</div>
+      <h3 class="project-title">Application de localisation</h3>
+      <p class="project-desc">Application Android permettant de suivre en temps réel la localisation d'un téléphone via Firebase et GPS.</p>
+      <div class="project-tags">
+        <span class="tag">Android</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">GPS</span>
+      </div>
+      <a href="https://github.com/votre-username/projet-localisation" target="_blank" class="project-link">
+        Voir sur GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card scanline reveal">
+      <div class="project-num">02 / PROJET</div>
+      <h3 class="project-title">Plateforme e-commerce</h3>
+      <p class="project-desc">Site e-commerce complet avec authentification, panier, paiement et tableau de bord admin développé avec Laravel.</p>
+      <div class="project-tags">
+        <span class="tag">Laravel</span>
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Tailwind</span>
+      </div>
+      <a href="https://github.com/votre-username/ecommerce-laravel" target="_blank" class="project-link">
+        Voir sur GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card scanline reveal">
+      <div class="project-num">03 / PROJET</div>
+      <h3 class="project-title">API REST Spring Boot</h3>
+      <p class="project-desc">API REST complète pour une gestion de bibliothèque avec JWT, CRUD, pagination et documentation Swagger.</p>
+      <div class="project-tags">
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Java</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Swagger</span>
+      </div>
+      <a href="https://github.com/votre-username/api-spring-boot" target="_blank" class="project-link">
+        Voir sur GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card scanline reveal">
+      <div class="project-num">04 / PROJET</div>
+      <h3 class="project-title">Dashboard React</h3>
+      <p class="project-desc">Tableau de bord analytique moderne avec graphiques interactifs, thème clair/sombre et export de données.</p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">Chart.js</span>
+        <span class="tag">CSS</span>
+        <span class="tag">API</span>
+      </div>
+      <a href="https://github.com/votre-username/dashboard-react" target="_blank" class="project-link">
+        Voir sur GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card scanline reveal">
+      <div class="project-num">05 / PROJET</div>
+      <h3 class="project-title">Script Python Cybersec</h3>
+      <p class="project-desc">Ensemble de scripts Python pour l'audit de sécurité réseau, scan de ports et analyse de vulnérabilités.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Kali Linux</span>
+        <span class="tag">Nmap</span>
+        <span class="tag">Sécurité</span>
+      </div>
+      <a href="https://github.com/votre-username/cybersec-scripts" target="_blank" class="project-link">
+        Voir sur GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card scanline reveal"
+         style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:260px;cursor:pointer;"
+         onclick="window.open('https://github.com/votre-username','_blank')">
+      <div style="font-size:32px;margin-bottom:16px;opacity:0.4;">+</div>
+      <div class="project-title" style="font-size:16px;opacity:0.6;">Voir tous mes projets</div>
+      <div class="project-desc" style="margin-top:8px;">Découvrez l'ensemble de mes repos sur GitHub</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPS -->
+<section id="apps">
+  <div class="section-label reveal">IV — Outils &amp; Applications</div>
+  <h2 class="section-title reveal">Mon environnement<span style="color:var(--accent)">.</span></h2>
+  <div class="apps-grid reveal">
+
+    <!-- VSCode -->
+    <div class="app-card">
+      <div class="app-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M22.3 2L12.1 12.8 5.2 7.4 2 9.1v13.8l3.2 1.7 6.9-5.4 10.2 10.8L30 27.3V4.7L22.3 2zM5 21.3V10.7l5.5 5.3L5 21.3zm17.3 4.5l-8.7-9.8 8.7-9.8v19.6z" fill="#007ACC"/></svg>
+      </div>
+      <div class="app-name">VSCode</div>
+    </div>
+
+    <!-- Canva -->
+    <div class="app-card">
+      <div class="app-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="14" fill="#7D2AE8"/><path d="M21.8 20.5c-.4.6-1 .9-1.9.9-1.6 0-2.8-1.3-2.8-3.6 0-2.4 1.2-3.8 2.8-3.8.8 0 1.4.3 1.8.8V13c0-.3.2-.5.5-.5s.5.2.5.5v9.4c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-.9zm0-4.8c-.4-.6-.9-1-1.8-1-1 0-1.8.9-1.8 2.8s.8 2.7 1.8 2.7c.8 0 1.4-.4 1.8-1v-3.5zM13.2 13h-.9c-.3 0-.5.2-.5.5v8.9c0 .3.2.5.5.5s.5-.2.5-.5v-3.6h.4c1.8 0 3-1 3-2.9s-1.2-2.9-3-2.9zm0 4.8h-.4v-3.8h.4c1.2 0 2 .6 2 1.9s-.8 1.9-2 1.9z" fill="white"/></svg>
+      </div>
+      <div class="app-name">Canva</div>
+    </div>
+
+    <!-- IntelliJ -->
+    <div class="app-card">
+      <div class="app-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ij" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FC801D"/><stop offset="100%" stop-color="#FF318C"/></linearGradient></defs><rect width="32" height="32" rx="4" fill="url(#ij)"/><rect x="5" y="5" width="22" height="22" rx="1" fill="black"/><path d="M8 22h8v1.5H8V22zM8.5 10v9H10V13.5l2 3h.1l2-3V19h1.5v-9h-1.5l-2 3.2-2-3.2H8.5zM17.5 10c0 2.2 1.3 3.2 3 4 1.3.6 2 1 2 2 0 .8-.6 1.3-1.5 1.3s-1.7-.5-2.4-1.2l-1 1.1c.9 1 2 1.5 3.4 1.5 1.7 0 3-1 3-2.8 0-1.8-1.2-2.7-2.8-3.4-1.2-.5-2-1-2-1.8 0-.7.5-1.1 1.4-1.1.8 0 1.4.3 2 .9l1-1.1c-.7-.8-1.7-1.3-3-1.3-1.8 0-3 1-3 2.9z" fill="white"/></svg>
+      </div>
+      <div class="app-name">IntelliJ</div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="app-card">
+      <div class="app-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.27 2 2 8.27 2 16c0 6.18 4.01 11.43 9.58 13.28.7.13.96-.3.96-.68v-2.38c-3.9.85-4.72-1.88-4.72-1.88-.64-1.62-1.55-2.05-1.55-2.05-1.27-.87.1-.85.1-.85 1.4.1 2.14 1.44 2.14 1.44 1.25 2.14 3.27 1.52 4.07 1.16.13-.9.49-1.52.89-1.87-3.11-.35-6.38-1.56-6.38-6.93 0-1.53.55-2.78 1.44-3.76-.14-.35-.62-1.78.14-3.71 0 0 1.17-.38 3.85 1.44 1.12-.31 2.31-.47 3.5-.47 1.19 0 2.38.16 3.5.47 2.68-1.82 3.85-1.44 3.85-1.44.76 1.93.28 3.36.14 3.71.9.98 1.44 2.23 1.44 3.76 0 5.38-3.28 6.57-6.41 6.91.5.43.96 1.3.96 2.61v3.87c0 .38.25.82.97.68C25.99 27.43 30 22.18 30 16 30 8.27 23.73 2 16 2z" fill="white"/></svg>
+      </div>
+      <div class="app-name">GitHub</div>
+    </div>
+
+    <!-- Android Studio -->
+    <div class="app-card">
+      <div class="app-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="as" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3DDC84"/><stop offset="100%" stop-color="#073042"/></linearGradient></defs><circle cx="16" cy="16" r="14" fill="url(#as)"/><path d="M11 13c0-2.8 2.2-5 5-5s5 2.2 5 5v6c0 .6-.4 1-1 1h-8c-.6 0-1-.4-1-1v-6zm2 0v5h6v-5c0-1.7-1.3-3-3-3s-3 1.3-3 3z" fill="white" opacity="0.9"/><circle cx="13.5" cy="12" r="1" fill="#3DDC84"/><circle cx="18.5" cy="12" r="1" fill="#3DDC84"/></svg>
+      </div>
+      <div class="app-name">Android Studio</div>
+    </div>
+
+    <!-- Postman -->
+    <div class="app-card">
+      <div class="app-icon">🔶</div>
+      <div class="app-name">Postman</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal">V — Contact</div>
+    <h2 class="section-title reveal">Travaillons ensemble<span style="color:var(--accent)">.</span></h2>
+    <p class="contact-tagline reveal">
+      Vous avez un projet en tête ? Une collaboration à proposer ?<br/>
+      Je suis disponible et prêt à discuter.
+    </p>
+    <div class="reveal">
+      <a href="https://wa.me/237673533949" target="_blank" class="whatsapp-btn">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+          <path d="M20.5 3.5A12 12 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 22c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7.9.9-3.6-.2-.4A10 10 0 0 1 2 12C2 6.5 6.5 2 12 2c2.7 0 5.2 1 7.1 2.9A9.9 9.9 0 0 1 22 12c0 5.5-4.5 10-10 10zm5.5-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1A8.3 8.3 0 0 1 8.1 10c-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.1-.3.2-.5 0-.2 0-.4-.1-.5-.1-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C5.4 6.2 4.6 7 4.6 8.7S5.7 11.8 5.8 12c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.5 0 0-.3-.1-.6-.3z"/>
+        </svg>
+        Contacter sur WhatsApp
+      </a>
+    </div>
+    <div style="margin-top:32px;font-family:var(--font-mono);font-size:12px;color:var(--muted);opacity:0.6;" class="reveal">
+      +237 673 533 949
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 22-Mai-2026 — mon Portfolio développé en HTML, CSS &amp; JS</p>
+  <p style="color:var(--accent)"> Cameroun creation 👨‍🎓</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
