@@ -24,7 +24,41 @@
     <li><a href="#apps">Outils</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  
+  <!-- Hamburger button (mobile only) -->
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <!-- Avatar dans le menu mobile -->
+    <div class="mobile-avatar">
+      <div class="mobile-avatar-wrapper">
+        <div class="mobile-avatar-ring"></div>
+        <div class="avatar-img" id="avatarImgMobile">
+          <div class="avatar-placeholder">
+            <img src="profil.jpg" alt="photo de profil">
+          </div>
+        </div>
+      </div>
+      <div class="mobile-avatar-name">MANYANOCK Emmanuel Landry</div>
+      <div class="mobile-avatar-role">Développeur Full Stack</div>
+    </div>
+    <!-- Liens de navigation -->
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link">01 — À propos</a></li>
+      <li><a href="#skills" class="mobile-nav-link">02 — Compétences</a></li>
+      <li><a href="#projects" class="mobile-nav-link">03 — Projets</a></li>
+      <li><a href="#apps" class="mobile-nav-link">04 — Outils</a></li>
+      <li><a href="#contact" class="mobile-nav-link">05 — Contact</a></li>
+    </ul>
+  </div>
+</div>
 
 <!-- HERO -->
 <section id="hero">
