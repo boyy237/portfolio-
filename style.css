@@ -671,6 +671,28 @@ footer p {
 }
 
 /* Avatar mobile */
+.mobile-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.mobile-back-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0,229,255,0.08);
+  transform: translateY(-1px);
+}
 .mobile-avatar {
   display: flex;
   flex-direction: column;

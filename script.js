@@ -95,17 +95,19 @@ document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe
 const avatarImg  = document.getElementById('avatarImg');
 const photoInput = document.getElementById('photoInput');
 
-avatarImg.addEventListener('click', () => photoInput.click());
+if (avatarImg && photoInput) {
+  avatarImg.addEventListener('click', () => photoInput.click());
 
-photoInput.addEventListener('change', e => {
-  const file = e.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    avatarImg.innerHTML = `<img src="${ev.target.result}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" alt="Photo de profil"/>`;
-  };
-  reader.readAsDataURL(file);
-});
+  photoInput.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      avatarImg.innerHTML = `<img src="${ev.target.result}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" alt="Photo de profil"/>`;
+    };
+    reader.readAsDataURL(file);
+  });
+}
 
 // ─── Active nav link on scroll ────────────────────────────────────────────────
 const sections = document.querySelectorAll('section[id]');
